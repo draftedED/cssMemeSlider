@@ -1,1 +1,1 @@
-# __cssMemeSlider__ https://drafteded.github.io/cssMemeSlider/cssMemeSlider/
+__cssMemeSlider__ https://drafteded.github.io/cssMemeSlider/cssMemeSlider/
