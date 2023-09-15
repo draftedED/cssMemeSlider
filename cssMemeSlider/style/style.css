@@ -16,7 +16,15 @@ body,
    height: 45vh;
    border: 3px solid orangered;
    border-radius: 1vw;
-   background-color: grey
+   background-color: grey;
+   padding: 1%;
+}
+
+.control-buttons-and-titles {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   width: 100%;
 }
 
 .control-buttons {
@@ -44,38 +52,66 @@ body,
    display: none;
 }
 
-#in1:checked ~ .il1 {
+#in1:checked ~ .control-buttons > .il1 {
    background-color: aquamarine;
 }
 
-#in1:checked ~ .il1:hover {
+#in1:checked ~ .control-buttons > .il1:hover {
    cursor: default;
    transform: scale(1);
 }
 
-#in2:checked ~ .il2 {
+#in2:checked ~ .control-buttons > .il2 {
    background-color: aquamarine;
 }
 
-#in2:checked ~ .il2:hover {
+#in2:checked ~ .control-buttons > .il2:hover {
    cursor: default;
    transform: scale(1);
 }
 
-#in3:checked ~ .il3 {
+#in3:checked ~ .control-buttons > .il3 {
    background-color: aquamarine;
 }
 
-#in3:checked ~ .il3:hover {
+#in3:checked ~ .control-buttons > .il3:hover {
    cursor: default;
    transform: scale(1);
 }
 
-#in4:checked ~ .il4 {
+#in4:checked ~ .control-buttons > .il4 {
    background-color: aquamarine;
 }
 
-#in4:checked ~ .il4:hover {
+#in4:checked ~ .control-buttons > .il4:hover {
    cursor: default;
    transform: scale(1);
+}
+
+.titles {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5%;
+}
+
+.meme-title {
+   display: none;
+   transition: all 0.6s ease-in-out;
+}
+
+#in1:checked ~ .titles > .mt1 {
+   display: flex;
+}
+
+#in2:checked ~ .titles > .mt2 {
+   display: flex;
+}
+
+#in3:checked ~ .titles > .mt3 {
+   display: flex;
+}
+
+#in4:checked ~ .titles > .mt4 {
+   display: flex;
 }

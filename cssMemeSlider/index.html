@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>cssMemeSlider</title>
-   <link rel="icon" href="./assets/favicon/favicon.ico">
-   <link rel="stylesheet" href="./style/reset.css">
-   <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-   <div class="main-container">
-      <div class="control-buttons">
-         <input checked type="radio" class="input-buttons" id="in1" name="memeSlider">
-         <input type="radio" class="input-buttons" id="in2" name="memeSlider">
-         <input type="radio" class="input-buttons" id="in3" name="memeSlider">
-         <input type="radio" class="input-buttons" id="in4" name="memeSlider">
-
-         <label for="in1" class="input-label il1"></label>
-         <label for="in2" class="input-label il2"></label>
-         <label for="in3" class="input-label il3"></label>
-         <label for="in4" class="input-label il4"></label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssMemeSlider</title>
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="control-buttons-and-titles">
+        <input checked type="radio" class="input-buttons" id="in1" name="memeSlider" />
+        <input type="radio" class="input-buttons" id="in2" name="memeSlider" />
+        <input type="radio" class="input-buttons" id="in3" name="memeSlider" />
+        <input type="radio" class="input-buttons" id="in4" name="memeSlider" />
+        <div class="control-buttons">
+          <label for="in1" class="input-label il1"></label>
+          <label for="in2" class="input-label il2"></label>
+          <label for="in3" class="input-label il3"></label>
+          <label for="in4" class="input-label il4"></label>
+        </div>
+        <div class="titles">
+          <p class="meme-title mt1">title1</p>
+          <p class="meme-title mt2">title2</p>
+          <p class="meme-title mt3">title3</p>
+          <p class="meme-title mt4">title4</p>
+        </div>
       </div>
-   </div>
-</body>
+      <div class="container-with-memes"></div>
+    </div>
+  </body>
 </html>
