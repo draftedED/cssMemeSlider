@@ -1,1 +1,5 @@
-__cssMemeSlider__ https://drafteded.github.io/cssMemeSlider/cssMemeSlider/
+# cssMemeSlider
+
+*********
+
+[Deploy](https://drafteded.github.io/cssMemeSlider/cssMemeSlider/)
