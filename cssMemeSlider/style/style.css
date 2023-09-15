@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+:root {
+   --body-bg: #1A1A1D;
+   --main-container-bg: #4E4E50;
+   --label-bg: #0C0032;
+   --label-border: #000000;
+   --title-color: #FFFFFF;
+   --label-checked-bg: aquamarine;
+}
+
 body {
    height: 100vh;
    width: 100vw;
-   background-color: #1A1A1D;
+   background-color: var(--body-bg);
 }
 
 body,
@@ -19,7 +28,7 @@ body,
    width: 50vw;
    height: 65vh;
    border-radius: 1vw;
-   background-color: #4E4E50;
+   background-color: var(--main-container-bg);
    padding: 0.5% 1%;
    overflow: hidden;
 }
@@ -64,8 +73,8 @@ body,
 .input-label {
    width: 1rem;
    height: 1rem;
-   background-color: #0C0032;
-   border: 0.1vw solid #000;
+   background-color: var(--label-bg);
+   border: 0.1vw solid var(--label-border);
    border-radius: 50%;
    opacity: 0.5;
    cursor: pointer;
@@ -86,15 +95,16 @@ body,
 
 .meme-title {
    display: none;
-   font-size: 20px;
+   font-size: 1.2em;
    font-family: 'Roboto', sans-serif;
-   color: #fff;
+   color: var(--title-color);
    transition: all 0.6s ease-in-out;
+   transform: scale(0);
 }
 
-/* Hover effect for control buttons */
+/* Hover for control buttons */
 #in1:checked ~ .control-buttons-and-titles > .control-buttons > .il1 {
-   background-color: aquamarine;
+   background-color: var(--label-checked-bg);
 }
 
 #in1:checked ~ .control-buttons-and-titles > .control-buttons > .il1:hover {
@@ -103,7 +113,7 @@ body,
 }
 
 #in2:checked ~ .control-buttons-and-titles > .control-buttons > .il2 {
-   background-color: aquamarine;
+   background-color: var(--label-checked-bg);
 }
 
 #in2:checked ~ .control-buttons-and-titles > .control-buttons > .il2:hover {
@@ -112,7 +122,7 @@ body,
 }
 
 #in3:checked ~ .control-buttons-and-titles > .control-buttons > .il3 {
-   background-color: aquamarine;
+   background-color: var(--label-checked-bg);
 }
 
 #in3:checked ~ .control-buttons-and-titles > .control-buttons > .il3:hover {
@@ -121,7 +131,7 @@ body,
 }
 
 #in4:checked ~ .control-buttons-and-titles > .control-buttons > .il4 {
-   background-color: aquamarine;
+   background-color: var(--label-checked-bg);
 }
 
 #in4:checked ~ .control-buttons-and-titles > .control-buttons > .il4:hover {
@@ -129,25 +139,29 @@ body,
    transform: scale(1);
 }
 
-/* Show title of meme */
+/* Title for meme slider */
 
 #in1:checked ~ .control-buttons-and-titles > .titles > .mt1 {
    display: flex;
+   transform: scale(1);
 }
 
 #in2:checked ~ .control-buttons-and-titles > .titles > .mt2 {
    display: flex;
+   transform: scale(1);
 }
 
 #in3:checked ~ .control-buttons-and-titles > .titles > .mt3 {
    display: flex;
+   transform: scale(1);
 }
 
 #in4:checked ~ .control-buttons-and-titles > .titles > .mt4 {
    display: flex;
+   transform: scale(1);
 }
 
-/* Move meme */
+/* Meme slider */
 
 #in1:checked ~ .containers-with-memes {
    margin-left: 0%;
