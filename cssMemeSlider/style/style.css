@@ -24,12 +24,12 @@ body,
 
 .main-container {
   flex-direction: column;
-  gap: 3%;
-  width: 70vw;
-  height: 75vh;
+  gap: 4%;
+  width: 55vw;
+  height: 80vh;
   border-radius: 1vw;
   background-color: var(--main-container-bg);
-  padding: 0.5% 1%;
+  padding: 1% 1%;
   overflow: hidden;
 }
 
@@ -62,13 +62,16 @@ body,
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   overflow: hidden;
+  height: 1.5rem;
+  padding: 0 0.5%;
 }
 
 .control-buttons {
   display: flex;
-  gap: 0.5vw;
+  gap: 1vw;
 }
 
 .input-label {
@@ -89,9 +92,9 @@ body,
 
 .titles {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-start;
-  gap: 0.2em;
+  gap: 2rem;
   width: 100%;
   height: 1.2rem;
 }
@@ -151,17 +154,17 @@ body,
 
 #in2:checked ~ .control-buttons-and-titles > .titles {
    transition: margin-top .5s;
-   margin-top: -1.5rem;
+   margin-top: 6.6rem;
 }
 
 #in3:checked ~ .control-buttons-and-titles > .titles {
    transition: margin-top .5s;
-   margin-top: -2.9rem;
+   margin-top: 13rem;
 }
 
 #in4:checked ~ .control-buttons-and-titles > .titles {
    transition: margin-top .5s;
-   margin-top: -4.2rem;
+   margin-top: 19.4rem;
 }
 
 /* Meme slider */
@@ -182,34 +185,60 @@ body,
   margin-left: -312%;
 }
 
-
 @media screen and (max-width: 1024px) {
-   .main-container {
-      width: 80vw;
-      height: 60vh;
-    }
+  .main-container {
+    width: 60vw;
+    height: 70vh;
+    padding: 2%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-   .main-container {
-      width: 70vw;
-      height: 40vh;
-    }
+  .main-container {
+    width: 70vw;
+    height: 65vh;
+    padding: 2%;
+  }
+
+  .control-buttons-and-titles {
+    flex-direction: column;
+    height: 3rem;
+    justify-content: unset;
+    gap: 10%;
+  }
+
+  #in1:checked ~ .control-buttons-and-titles > .titles {
+    transition: margin-top .1s;
+    margin-top: 0rem;
+ }
+ 
+ #in2:checked ~ .control-buttons-and-titles > .titles {
+    transition: margin-top .1s;
+    margin-top: 3.2rem;
+ }
+ 
+ #in3:checked ~ .control-buttons-and-titles > .titles {
+    transition: margin-top .1s;
+    margin-top: 6.4rem;
+ }
+ 
+ #in4:checked ~ .control-buttons-and-titles > .titles {
+    transition: margin-top .1s;
+    margin-top: 9.6rem;
+ }
+
 }
 
 @media screen and (max-width: 425px) {
-   .main-container {
-      width: 90vw;
-      height: auto;
-      gap: 1vh;
-      padding: 3%;
-    }
-
-    .control-buttons-and-titles {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1vh;
-    }
+  .main-container {
+    width: 95vw;
+    height: 40vh;
+  }
 }
 
+@media (orientation: landscape) {
+  .main-container {
+    width: 50vw;
+    height: 75vh;
+  }
+}
