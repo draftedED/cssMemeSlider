@@ -71,23 +71,32 @@ body,
 
 .control-buttons {
   display: flex;
-  gap: 1vw;
 }
 
 .input-label {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.input-label:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.label-area {
   width: 1rem;
   height: 1rem;
   background-color: var(--label-bg);
   border: 0.1vw solid var(--label-border);
   border-radius: 50%;
   opacity: 0.5;
-  cursor: pointer;
   transition: all 0.6s ease-in-out;
-}
-
-.input-label:hover {
-  opacity: 1;
-  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .titles {
@@ -108,38 +117,38 @@ body,
 }
 
 /* Hover for control buttons */
-#in1:checked ~ .control-buttons-and-titles > .control-buttons > .il1 {
+#in1:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il1 {
   background-color: var(--label-checked-bg);
 }
 
-#in1:checked ~ .control-buttons-and-titles > .control-buttons > .il1:hover {
+#in1:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il1:hover {
   cursor: default;
   transform: scale(1);
 }
 
-#in2:checked ~ .control-buttons-and-titles > .control-buttons > .il2 {
+#in2:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il2 {
   background-color: var(--label-checked-bg);
 }
 
-#in2:checked ~ .control-buttons-and-titles > .control-buttons > .il2:hover {
+#in2:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il2:hover {
   cursor: default;
   transform: scale(1);
 }
 
-#in3:checked ~ .control-buttons-and-titles > .control-buttons > .il3 {
+#in3:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il3 {
   background-color: var(--label-checked-bg);
 }
 
-#in3:checked ~ .control-buttons-and-titles > .control-buttons > .il3:hover {
+#in3:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il3:hover {
   cursor: default;
   transform: scale(1);
 }
 
-#in4:checked ~ .control-buttons-and-titles > .control-buttons > .il4 {
+#in4:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il4 {
   background-color: var(--label-checked-bg);
 }
 
-#in4:checked ~ .control-buttons-and-titles > .control-buttons > .il4:hover {
+#in4:checked ~ .control-buttons-and-titles > .control-buttons > .input-label > .il4:hover {
   cursor: default;
   transform: scale(1);
 }
